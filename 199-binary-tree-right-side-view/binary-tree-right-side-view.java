@@ -12,7 +12,7 @@
  *         this.right = right;
  *     }
  * }
- */
+ */ 
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
@@ -30,9 +30,7 @@ class Solution {
         ans.add(root.val);
 
         rightview(root.right, ans , depth+1);
-        rightview(root.left, ans , depth+1);
-
-        
+        rightview(root.left, ans , depth+1);    
 
     }
 }

@@ -1,11 +1,11 @@
 class Solution {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring(String s) 
+    {
         HashMap<Character, Integer> mpp = new HashMap <>();
         int len=0;
         int right =0;
         int left =0;
         int n = s.length();
-
         while(right<n)
         {
             if(mpp.containsKey(s.charAt(right)))

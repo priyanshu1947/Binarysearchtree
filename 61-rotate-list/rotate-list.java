@@ -9,7 +9,7 @@ class Solution {
         // Calculate the length of the linked list and make it circular
         while (curr.next != null) {
             curr = curr.next;
-            ++size;
+            size++;
         }
 
         curr.next = head;  // Make the linked list circular

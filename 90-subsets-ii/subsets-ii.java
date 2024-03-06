@@ -11,7 +11,7 @@ class Solution {
         anslist.add(new ArrayList<>(ds));
         for(int i =ind;i<nums.length;i++)
         {
-            if(i!=ind && nums[i] == nums[i-1]) continue;
+            if(i> ind && nums[i] == nums[i-1]) continue;
             ds.add(nums[i]);
             fun(i+1,nums,ds,anslist);
             ds.remove(ds.size()-1);
